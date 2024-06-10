@@ -1,0 +1,12 @@
+{
+  "name": "Prevent Create Public Repo",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "description": "prevent creating public repository in GitHub",
+  "content_scripts": [{
+    "matches": ["https://github.com/new"],
+    "js": [
+      "content.js"
+    ]
+  }]
+}
